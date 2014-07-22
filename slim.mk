@@ -14,20 +14,25 @@
 # limitations under the License.
 #
 
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
 
+# Inherit from our slim product configuration
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-$(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := i815
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SCH-I815
-PRODUCT_NAME := cm_i815
+PRODUCT_NAME := slim_i815
 PRODUCT_RELEASE_NAME := SCH-I815
 
 # Set product name and build fingerprint
