@@ -20,14 +20,14 @@ TARGET_SCREEN_WIDTH := 1280
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := i815
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SCH-I815
-PRODUCT_NAME := cm_i815
+PRODUCT_NAME := aosp_i815
 PRODUCT_RELEASE_NAME := SCH-I815
 
 # Set product name and build fingerprint
