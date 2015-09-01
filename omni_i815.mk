@@ -24,6 +24,9 @@ DEVICE_RESOLUTION := 1280x800
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Pull in CDMA-specific stuff such as APNs
+$(call inherit-product, vendor/omni/config/cdma.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := i815
