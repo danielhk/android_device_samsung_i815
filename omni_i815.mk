@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := GalaxyTab
 PRODUCT_DEVICE := i815
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SCH-I815
@@ -36,4 +36,4 @@ PRODUCT_NAME := omni_i815
 PRODUCT_RELEASE_NAME := SCH-I815
 
 # Set product name and build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I815 BUILD_FINGERPRINT="samsung/SCH-I815/SCH-I815:4.3.1/JLS36I:user/release-keys" PRIVATE_BUILD_DESC="SCH-I815-user 4.3.1 JLS36I release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I815 BUILD_FINGERPRINT="samsung/GalaxyTab/SCH-I815:6.0.0/MRA58K:userdebug/release-keys" PRIVATE_BUILD_DESC="SCH-I815-userdebug 6.0.0 MRA58K release-keys"
