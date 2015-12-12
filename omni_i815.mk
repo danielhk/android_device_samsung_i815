@@ -23,6 +23,7 @@ DEVICE_RESOLUTION := 1280x800
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # Pull in CDMA-specific stuff such as APNs
 $(call inherit-product, vendor/omni/config/cdma.mk)
