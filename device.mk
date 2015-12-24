@@ -41,4 +41,5 @@ PRODUCT_PACKAGES += \
 # extra packages
 PRODUCT_PACKAGES += \
 	messaging \
-	libsecril-client
+	libsecril-client \
+	SamsungServiceMode
