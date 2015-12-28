@@ -34,8 +34,9 @@ PRODUCT_COPY_FILES += \
 	device/samsung/smdk4210-tab/configs/etc/old-apns-conf.xml:system/etc/old-apns-conf.xml \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
-# Samsung symbols
+# Wrapper function & Samsung symbols
 PRODUCT_PACKAGES += \
+	dmitry-ril \
 	libsamsung_symbols
 
 # extra packages
